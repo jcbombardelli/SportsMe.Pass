@@ -1,0 +1,15 @@
+<div class="container">
+  <h5>
+    Lista de Eventos
+  </h5>
+  </div>
+
+<div class="jumbotron jumbotron-fluid event {{event.typeEvent}}" *ngFor="let event of events">
+  <div class="container container-fluid event-background" [routerLink]="['/event', event.id]">
+    <h1 class="display-3" style="color: white">{{event.name}}</h1>
+    <p class="lead" style="color: antiquewhite">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
+  <button class="btn btn-large btn-primary" (click)="func()"> Quero ir!</button>
+</div>
+
+

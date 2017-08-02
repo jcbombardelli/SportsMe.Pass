@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="container">
+
+    <h5>Login</h5>
+
+    <form (ngSubmit)="doLogin()">
+      <div class="row">
+        <div class="input-field col s5">
+          <i class="material-icons prefix">account_circle</i>
+          <input [(ngModel)]="userLogin.user" name="user" id="user" type="email" class="validate" required email>
+          <label for="user" data-error="Email inválido" data-success="Email válido" class="active">Usuario</label>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="input-field col s5">
+          <i class="material-icons prefix">lock</i>
+          <input [(ngModel)]="userLogin.pass" name="pass" id="pass" type="password" class="validate" required>
+          <label for="pass" class="active">Senha</label>
+        </div>
+      </div>
+
+
+      <div class="row col s5">
+        <button class="btn waves-effect waves-light" type="submit" name="doLogin">
+        Entrar
+        <i class="material-icons right">send</i>
+      </button>
+      </div>
+    </form>
+
+
+  </div>
+</div>

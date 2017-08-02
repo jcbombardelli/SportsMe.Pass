@@ -1,0 +1,19 @@
+.event{
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+    background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.soccer{
+    background-image:url("../../../../assets/img/soccer.jpg");
+
+}
+
+.football{
+    background-image:url("../../../../assets/img/football.png");
+}
+

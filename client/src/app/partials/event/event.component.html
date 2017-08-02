@@ -1,0 +1,9 @@
+<div class="container">
+  <h5>
+    Lista de Eventos
+  </h5>
+
+  <div class="collection">
+    <a class="collection-item" *ngFor="let event of events" [routerLink]="['/event', event.id]"> {{event.name}}    </a>
+  </div>
+</div>
